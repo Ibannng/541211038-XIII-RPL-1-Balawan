@@ -1,0 +1,25 @@
+{
+  "name": "lkpd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ibannng/541211038-XIII-RPL-1-Balawan.git"
+  },
+  "author": "Ibannng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ibannng/541211038-XIII-RPL-1-Balawan/issues"
+  },
+  "homepage": "https://github.com/Ibannng/541211038-XIII-RPL-1-Balawan#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

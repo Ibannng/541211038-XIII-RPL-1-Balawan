@@ -1,26 +1,19 @@
 const express = require("express");
 const app = express();
+const userrouter = require("./route/user");
+const connectDB = require("./config/db");
+
 const port = 3000;
+app.use(express.json()); // for parsing application/json
+app.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
 
-app.get("/user", (req, res) => {
-  res.send("Got All User");
-});
+app.use(userrouter);
 
-app.post("/user", (req, res) => {
-  res.send("Got a POST request");
-});
-
-app.put("/user/:id", (req, res) => {
-  res.send("Got a PUT request at /user");
-});
-
-app.delete("/user/:id", (req, res) => {
-  res.send("Got a DELETE request at /user");
-});
+connectDB();
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);

@@ -1,6 +1,7 @@
 // getting-started.js
 const mongoose = require("mongoose");
 
+//ini merupakan codingan untuk menghubungi Database
 const mongoDB = async function main() {
   await mongoose.connect("mongodb://127.0.0.1:27017/praktikumkk4");
   console.log("DB Connected");

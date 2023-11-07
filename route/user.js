@@ -5,6 +5,7 @@ const userController = require("../controllers/user");
 
 router.get("/user", userController.index);
 
+//untuk ambil data berdasarkan id
 router.get("/user/:id", userController.show);
 
 router.post("/user", userController.store);
